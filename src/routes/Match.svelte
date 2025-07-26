@@ -5,11 +5,11 @@
     export let logo;
 </script>
 
-<div class="card p-4 mb-2 mt-2 border-none">
-    <header>
-        <img src={logo} alt='Team logo' width="48" height="64"/>
-    </header>
-    <section>
-        <p class="break-all">{team_name}</p>
-    </section>
+<div class="flex-1 flex flex-col items-center">
+    <div class="relative">
+        <img src={logo} alt="Image 1" class="w-full object-cover rounded-lg">
+        <div class="absolute bottom-0 left-0 w-full bg-gray-900 bg-opacity-0 text-center py-2 rounded-b-lg">
+            <p class="text-gray-300 text-sm">{team_name}</p>
+        </div>
+    </div>
 </div>
